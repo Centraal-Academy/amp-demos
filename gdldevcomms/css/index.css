@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.header-bar {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-bar--text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.hero-container {
+  background-image: url("https://c1.staticflickr.com/3/2601/3707536822_b7a8d462f7_b.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-container--text {
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  padding: 0rem 2rem;
+  color: white;
+}
+
+.title {
+  max-width: 100%;
+}
