@@ -15,8 +15,8 @@
         box-sizing: border-box;
       }
 
-      body, html {
-        height: 100%;
+      .calendar {
+        padding: 1rem;
       }
 
       .header-bar {
@@ -53,15 +53,28 @@
         max-width: 100%;
       }
     </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   </head>
   <body>
     <header class="header-bar">
       <span class="header-bar--text">GDL DevComms</span>
     </header>
-    <amp-layout class="hero-container" layout="fixed-height" height="20rem">
+    <amp-layout class="hero-container" layout="fixed-height" height="15rem">
       <div class="hero-container--text">
         <h1 class="title">Welcome to GDL DevComms</h1>
       </div>
     </amp-layout>
+    <section class="calendar">
+      <h2>Calendario de la comunidad</h2>
+      <amp-iframe
+          frameborder="0"
+          layout="responsive"
+          placeholder
+          height="600"
+          sandbox="allow-scripts allow-same-origin allow-popups"
+          src="https://calendar.google.com/calendar/embed?src=kth3ed3isudallj5ikahl3mu28%40group.calendar.google.com&ctz=America%2FMexico_City"
+          width="600">
+        </amp-iframe>
+    </section>
   </body>
 </html>
