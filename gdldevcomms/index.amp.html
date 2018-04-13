@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html amp lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>GDL DevComms</title>
+    <link rel="canonical" href="index.html">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .calendar {
+        padding: 1rem;
+      }
+
+      .header-bar {
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .header-bar--text {
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      .hero-container {
+        background-image: url("https://c1.staticflickr.com/3/2601/3707536822_b7a8d462f7_b.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .hero-container--text {
+        text-align: center;
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        padding: 0rem 2rem;
+        color: white;
+      }
+
+      .title {
+        max-width: 100%;
+      }
+    </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  </head>
+  <body>
+    <header class="header-bar">
+      <span class="header-bar--text">GDL DevComms</span>
+    </header>
+    <amp-layout class="hero-container" layout="fixed-height" height="15rem">
+      <div class="hero-container--text">
+        <h1 class="title">Welcome to GDL DevComms</h1>
+      </div>
+    </amp-layout>
+    <section class="calendar">
+      <h2>Calendario de la comunidad</h2>
+      <amp-iframe
+        frameborder="0"
+        layout="responsive"
+        height="600"
+        sandbox="allow-scripts allow-same-origin allow-popups"
+        src="https://calendar.google.com/calendar/embed?src=kth3ed3isudallj5ikahl3mu28%40group.calendar.google.com&ctz=America%2FMexico_City"
+        width="600">
+        <div placeholder >Loading</div>
+      </amp-iframe>
+    </section>
+  </body>
+</html>
